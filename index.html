@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt Coste — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme') || 'dark';
+      var lang = localStorage.getItem('lang') || 'en';
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="controls">
+    <button class="ctrl-btn theme-btn" id="theme-btn">☀</button>
+    <button class="ctrl-btn" id="lang-btn">FR</button>
+  </div>
+
+  <div class="wrapper">
+
+    <header class="site-header">
+      <h1 class="site-name">Matt <span>Coste</span></h1>
+      <p class="site-tagline" id="tagline">Choose your experience</p>
+      <div class="divider"></div>
+    </header>
+
+    <div class="cards">
+
+      <a class="card" href="https://matt-coste.github.io/portfolio-photo" id="card-photo">
+        <span class="card-num">01</span>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+          <circle cx="12" cy="13" r="4" />
+        </svg>
+        <span class="card-label" id="label-photo">Visual</span>
+        <h2 class="card-title" id="title-photo">Photo<br>Portfolio</h2>
+        <p class="card-desc" id="desc-photo">Collections, series and visual stories captured through the lens.</p>
+        <span class="card-cta" id="cta-photo">Explore</span>
+      </a>
+
+      <a class="card" href="https://matt-coste.github.io/portfolio-dev" id="card-dev">
+        <span class="card-num">02</span>
+        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" />
+          <path d="M8 21h8M12 17v4" />
+        </svg>
+        <span class="card-label" id="label-dev">Technical</span>
+        <h2 class="card-title" id="title-dev">Code<br>Portfolio</h2>
+        <p class="card-desc" id="desc-dev">Projects, architecture and software built as a software engineer.</p>
+        <span class="card-cta" id="cta-dev">Explore</span>
+      </a>
+
+    </div>
+
+    <footer class="site-footer" id="footer-copy"></footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
